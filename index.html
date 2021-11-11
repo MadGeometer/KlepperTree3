@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tree Demo</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="scripts/KlepperTree3.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+
+        <!-- Items used to populate tree -->
+        <script type="text/javascript" src="api-config/account.js"></script>
+        <script type="text/javascript" src="api-config/administrative.js"></script>
+        <script type="text/javascript" src="api-config/app_setting.js"></script>
+        <script type="text/javascript" src="api-config/application.js"></script>
+        <script type="text/javascript" src="api-config/authenticate.js"></script>
+        <script type="text/javascript" src="api-config/avatar.js"></script>
+        <script type="text/javascript" src="api-config/category.js"></script>
+        <script type="text/javascript" src="api-config/category_setting.js"></script>
+        <script type="text/javascript" src="api-config/child_status.js"></script>
+        <script type="text/javascript" src="api-config/data_analysis.js"></script>
+        <script type="text/javascript" src="api-config/device.js"></script>
+        <script type="text/javascript" src="api-config/device_application.js"></script>
+        <script type="text/javascript" src="api-config/device_event.js"></script>
+        <script type="text/javascript" src="api-config/feed.js"></script>
+        <script type="text/javascript" src="api-config/general_setting.js"></script>
+        <script type="text/javascript" src="api-config/group.js"></script>
+        <script type="text/javascript" src="api-config/license.js"></script>
+        <script type="text/javascript" src="api-config/mode.js"></script>
+        <script type="text/javascript" src="api-config/mdm_info.js"></script>
+        <script type="text/javascript" src="api-config/named_location.js"></script>
+        <script type="text/javascript" src="api-config/overall_setting.js"></script>
+        <script type="text/javascript" src="api-config/parental_mode.js"></script>
+        <script type="text/javascript" src="api-config/publish.js"></script>
+        <script type="text/javascript" src="api-config/scheduled_feed_item.js"></script>
+        <script type="text/javascript" src="api-config/status.js"></script>
+        <script type="text/javascript" src="api-config/time_block.js"></script>
+        <script type="text/javascript" src="api-config/url_setting.js"></script>
+        <script type="text/javascript" src="api-config/user.js"></script>
+        <script type="text/javascript" src="api-config/user_device.js"></script>
+
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="styles/KlepperTree3.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body onload="onPageLoad()">
+        <h1>Tree Demo</h1>
+
+        <div style="display: flex; flex-direction: row;">
+            <div id="treeHolder" class="tree"></div>
+            <textarea id="messageTxt" rows="10" cols="60" class="textInput"></textarea>
+        </div>
+        
+        <div class="footnote">Icons from <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank">FamFamFam</a></div>
+    </body>
+</html>

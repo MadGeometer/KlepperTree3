@@ -1,0 +1,78 @@
+/*
+**** CSS for the tree itself, not the tree holder ****
+CSS based on https://two-wrongs.com/draw-a-tree-structure-with-only-css
+Assumes icons for folders and leafs are in /images/KlepperTree3
+JS is original
+*/
+
+.tree, .tree ul, .tree li
+{
+    position: relative;
+    user-select: none;
+    font-size: small;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.tree ul
+{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.tree li::before, .tree li::after
+{
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+
+.tree li::before
+{
+    border-top: 1px solid #999999;
+    top: 9px;
+    width: 8px;
+    height: 0;
+}
+
+.tree li::after
+{
+    border-left: 1px solid #999999;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+.tree ul > li:last-child::after
+{
+    height: 8px;
+}
+
+.folder
+{
+    background: url("../images/KlepperTree3/folder.png") left top no-repeat;
+    padding-left: 20px;
+    color: #336699;
+}
+
+.folder:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #336699;
+}
+
+.leaf
+{
+    background:url("../images/KlepperTree3/page_white.png") left top;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: #336699;
+}
+
+.leaf:hover
+{
+    cursor: default;
+    text-decoration: underline;
+    color: #336699;
+}
